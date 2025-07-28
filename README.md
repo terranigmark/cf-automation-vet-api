@@ -10,7 +10,13 @@ It now includes CRUD APIs for:
 * Prescriptions and patient histories
 * Payments and orders
 
-The codebase comes with a configuration stub, a DB session dependency and a ready‑to‑install `requirements.txt`.
+The codebase comes with a configuration stub, a DB session dependency and a ready‑to‑install `requirements.txt`. It defaults to an embedded SQLite database so you can try the API without running Postgres.
+
+Run the following once to create the SQLite tables:
+
+```bash
+python app/create_db.py
+```
 
 ## Quick start
 

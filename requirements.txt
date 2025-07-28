@@ -4,5 +4,6 @@ sqlalchemy>=2.0,<3
 pydantic[email]
 pydantic-settings>=2.1
 asyncpg
+aiosqlite
 python-multipart
 passlib[bcrypt]
