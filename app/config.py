@@ -3,7 +3,7 @@ from functools import lru_cache
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
-    database_url: str = "postgresql+asyncpg://user:password@localhost/vet_db"
+    database_url: str = "sqlite+aiosqlite:///./vet_db.sqlite3"
     secret_key: str = "change-me"
 
     class Config:
